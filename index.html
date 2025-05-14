@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolución de la Ingeniería de Sistemas en Colombia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+<nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="fas fa-laptop-code me-2"></i>Ingeniería en Colombia
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#timeline"><i class="fas fa-history me-1"></i> Línea de tiempo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#graficos"><i class="fas fa-chart-bar me-1"></i> Datos visuales</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reflexiones"><i class="fas fa-lightbulb me-1"></i> Reflexiones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#descargas-section"><i class="fas fa-download me-1"></i> Descargas</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <h1><i class="fas fa-code me-2"></i>Evolución de la Ingeniería de Sistemas en Colombia</h1>
+    <p class="lead">Un recorrido histórico a través de entrevistas, tecnologías y experiencias reales</p>
+  </div>
+</header>
+
+<div class="container py-3">
+  <div class="input-group">
+    <span class="input-group-text bg-primary text-white"><i class="fas fa-search"></i></span>
+    <input type="text" id="searchInput" class="form-control" placeholder="Buscar por palabra clave o tecnología...">
+  </div>
+</div>
+
+<section id="timeline" class="timeline-section container">
+  <h2 class="text-center mb-5"><i class="fas fa-history me-2"></i>Nuestra Historia</h2>
+  
+  <div class="timeline-item mb-4" data-aos="fade-up">
+    <img src="img/Captura de pantalla 2025-05-13 163853.jpg" alt="Luis Bernardo Chicaiza" class="person-image">
+    <div class="person-info">
+      <h5 class="timeline-year"><i class="fas fa-calendar-alt me-2"></i>1990 - Luis Bernardo Chicaiza</h5>
+      <p>Alta formación científica, creación de antivirus nacional, uso de mainframes y programación en ensamblador.</p>
+      <p class="quote"><i class="fas fa-quote-left me-2"></i>"Yo programaba en ensamblador porque quería el máximo control del hardware"<i class="fas fa-quote-right ms-2"></i></p>
+      <div class="tech-tags">
+        <span class="badge bg-primary">Ensamblador</span>
+        <span class="badge bg-secondary">Mainframe</span>
+        <span class="badge bg-info">Antivirus</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item mb-4" data-aos="fade-up">
+    <img src="img/señora.jpg" alt="Dalia Trujillo Penagos" class="person-image">
+    <div class="person-info">
+      <h5 class="timeline-year"><i class="fas fa-calendar-alt me-2"></i>1992 - Dalia Trujillo Penagos</h5>
+      <p>Ingeniera de Sistemas egresada de la Universidad de los Andes, apasionada por el desarrollo de software y la ingeniería de software. Aunque comenzó sin tener conocimiento alguno sobre computadores, encontró su vocación gracias a su amor por las matemáticas y una película que le despertó la curiosidad por esta carrera.</p>
+      <p class="quote"><i class="fas fa-quote-left me-2"></i>"Yo soy ingeniera de sistemas gracias a una película, porque realmente no tenía más contacto con la tecnología."<i class="fas fa-quote-right ms-2"></i></p>
+      <div class="tech-tags">
+        <span class="badge bg-primary">Desarrollo de Software</span>
+        <span class="badge bg-secondary">Matemáticas</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item mb-4" data-aos="fade-up">
+    <img src="img/aeñor.jpg" alt="Camilo Bernal" class="person-image">
+    <div class="person-info">
+      <h5 class="timeline-year"><i class="fas fa-calendar-alt me-2"></i>1994 - Camilo Bernal</h5>
+      <p>Ingeniero de Sistemas de la Universidad Católica, emprendedor autodidacta que pasó de mensajero y bodeguero a desarrollar software empresarial usado por millones de personas. Su carrera está marcada por la persistencia, el trabajo duro y la pasión por aprender nuevas tecnologías.</p>
+      <p class="quote"><i class="fas fa-quote-left me-2"></i>"Yo llegué sin estar invitado al concurso, me llevé los manuales, no dormí, y al otro día entregué el desarrollo. Así empezó todo."<i class="fas fa-quote-right ms-2"></i></p>
+      <div class="tech-tags">
+        <span class="badge bg-primary">Pascal</span>
+        <span class="badge bg-secondary">DataFlex</span>
+        <span class="badge bg-info">Clipper</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item mb-4" data-aos="fade-up">
+    <img src="img/daniel.jpg" alt="Daniel Fernando Cortés González" class="person-image">
+    <div class="person-info">
+      <h5 class="timeline-year"><i class="fas fa-calendar-alt me-2"></i>1994 - Daniel Fernando Cortés González</h5>
+      <p>Ingeniero de Sistemas de la Universidad Nacional, diagnosticado en la adultez con Asperger, encontró en la programación un mundo lógico donde se sentía cómodo. Apasionado por las matemáticas y los algoritmos, su camino profesional ha estado guiado por la lógica y el diseño de software.</p>
+      <p class="quote"><i class="fas fa-quote-left me-2"></i>"Elegí Ingeniería de Sistemas porque era una carrera donde no tenía que interactuar con mucha gente"<i class="fas fa-quote-right ms-2"></i></p>
+      <div class="tech-tags">
+        <span class="badge bg-primary">Algoritmos</span>
+        <span class="badge bg-secondary">Matemáticas</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item mb-4" data-aos="fade-up">
+    <img src="img/otro.jpg" alt="Julián García" class="person-image">
+    <div class="person-info">
+      <h5 class="timeline-year"><i class="fas fa-calendar-alt me-2"></i>2004 - Julián García</h5>
+      <p>Transición entre lo académico riguroso y la docencia. Interés por algoritmos y programación genética.</p>
+      <p class="quote"><i class="fas fa-quote-left me-2"></i>"La tesis fue como una maestría, enfocada en programación genética"<i class="fas fa-quote-right ms-2"></i></p>
+      <div class="tech-tags">
+        <span class="badge bg-primary">Algoritmos</span>
+        <span class="badge bg-secondary">Programación Genética</span>
+        <span class="badge bg-info">Docencia</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="timeline-item mb-4" data-aos="fade-up">
+    <img src="img/yuri.jpg" alt="Yuri Yineth Niño Roa" class="person-image">
+    <div class="person-info">
+      <h5 class="timeline-year"><i class="fas fa-calendar-alt me-2"></i>2008 - Yuri Yineth Niño Roa</h5>
+      <p>Orientación profesional hacia el desarrollo web. Desafíos por brechas de género y región. Trabajó en Google.</p>
+      <p class="quote"><i class="fas fa-quote-left me-2"></i>"Nunca imaginé llegar a Google viniendo de Garagoa"<i class="fas fa-quote-right ms-2"></i></p>
+      <div class="tech-tags">
+        <span class="badge bg-primary">Desarrollo Web</span>
+        <span class="badge bg-secondary">Google</span>
+        <span class="badge bg-success">Mujer en Tech</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="graficos" class="container my-5">
+  <h2 class="text-center mb-4"><i class="fas fa-chart-bar me-2"></i>Tecnologías a lo largo del tiempo</h2>
+  <canvas id="techChart" height="120"></canvas>
+</section>
+
+<section id="reflexiones">
+  <div class="container">
+    <h4><i class="fas fa-lightbulb me-2"></i>Reflexiones y proyecciones</h4>
+    <p>La Ingeniería de Sistemas en Colombia ha transitado de la computación dura al desarrollo ágil, de mainframes a la nube, y de la enseñanza tradicional a la formación práctica y continua.</p>
+  </div>
+</section>
+
+<section id="descargas-section" class="downloads-section container my-5">
+  <h3><i class="fas fa-download me-2"></i>Material complementario</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5 mb-4">
+      <a href="Originales-90s.txt" class="download-card">
+        <i class="fas fa-history"></i>
+        <span>Entrevistas completas años 90</span>
+        <small>Formato TXT</small>
+      </a>
+    </div>
+    <div class="col-md-6 col-lg-5 mb-4">
+      <a href="Originales-2000 (1).txt" class="download-card">
+        <i class="fas fa-laptop-code"></i>
+        <span>Entrevistas completas años 2000</span>
+        <small>Formato TXT</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-0">&copy; 2025 Evolución de la Ingeniería de Sistemas en Colombia</p>
+    <p class="mb-0"><small>Una mirada histórica a través de testimonios reales</small></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
