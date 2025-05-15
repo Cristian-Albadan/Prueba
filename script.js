@@ -143,7 +143,10 @@ new Chart(ctx2, {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Dificultades iniciales enfrentadas por entrevistados'
+        text: 'Dificultades iniciales enfrentadas por entrevistados',
+        font: {
+          size: 16,
+          weight: 'bold'
       }
     },
     scales: {
@@ -193,7 +196,11 @@ new Chart(motivacionesCtx, {
         },
         title: {
         display: true,
-        text: 'Motivaciones para estudiar Ingeniería de Sistemas'
+        text: 'Motivaciones para estudiar Ingeniería de Sistemas',
+        font: {
+          size: 16,
+          weight: 'bold'
+      }
       }
         
       }
