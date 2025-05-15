@@ -39,6 +39,8 @@ document.getElementById('searchInput').addEventListener('input', function () {
 });
 
 // Chart.js
+
+// Gráfico 1: Tecnologías mencionadas por año
 const ctx = document.getElementById('techChart');
 new Chart(ctx, {
   type: 'bar',
@@ -90,7 +92,7 @@ new Chart(ctx, {
           size: 13
         },
         callbacks: {
-          label: function(context) {
+          label: function (context) {
             const etiquetas = {
               0: 'Ensamblador, BASIC, Pascal',
               1: 'Carol, Pascal',
@@ -126,6 +128,9 @@ new Chart(ctx, {
     }
   }
 });
+
+
+// Gráfico 2: Dificultades enfrentadas
 const ctx2 = document.getElementById('dificultadChart');
 new Chart(ctx2, {
   type: 'bar',
@@ -144,11 +149,11 @@ new Chart(ctx2, {
       title: {
         display: true,
         text: 'Dificultades iniciales enfrentadas por entrevistados',
-      font: {
-        size: 16,
-        weight: 'bold'
-  }}}
-},
+        font: {
+          size: 16,
+          weight: 'bold'
+        }
+      }
     },
     scales: {
       y: {
@@ -156,7 +161,7 @@ new Chart(ctx2, {
         max: 5,
         ticks: {
           stepSize: 1,
-          callback: function(value) {
+          callback: function (value) {
             return ['Bajo', '', 'Medio', '', 'Alto'][value - 1];
           }
         }
@@ -164,6 +169,9 @@ new Chart(ctx2, {
     }
   }
 });
+
+
+// Gráfico 3: Motivaciones (Radar)
 const motivacionesCtx = document.getElementById('motivacionesChart');
 new Chart(motivacionesCtx, {
   type: 'radar',
@@ -196,14 +204,13 @@ new Chart(motivacionesCtx, {
           stepSize: 1
         },
         title: {
-        display: true,
-        text: 'Motivaciones para estudiar Ingeniería de Sistemas',
-        font: {
-          size: 16,
-          weight: 'bold'
-      }
-      }
-        
+          display: true,
+          text: 'Motivaciones para estudiar Ingeniería de Sistemas',
+          font: {
+            size: 16,
+            weight: 'bold'
+          }
+        }
       }
     },
     plugins: {
@@ -217,7 +224,7 @@ new Chart(motivacionesCtx, {
       },
       tooltip: {
         callbacks: {
-          label: function(context) {
+          label: function (context) {
             const frases = {
               0: '“Participé en Olimpiadas desde el colegio, eso me marcó” – Alfredo',
               1: '“Formateaba mi PC todos los días, eso me encantaba” – Juan Camilo',
