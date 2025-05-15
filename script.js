@@ -147,7 +147,7 @@ new Chart(ctx2, {
       font: {
         size: 16,
         weight: 'bold'
-  }
+  }}}
 },
     },
     scales: {
