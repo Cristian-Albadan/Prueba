@@ -144,10 +144,11 @@ new Chart(ctx2, {
       title: {
         display: true,
         text: 'Dificultades iniciales enfrentadas por entrevistados',
-        font: {
-          size: 16,
-          weight: 'bold'
-      }
+      font: {
+        size: 16,
+        weight: 'bold'
+  }
+},
     },
     scales: {
       y: {
