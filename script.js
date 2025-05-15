@@ -126,6 +126,41 @@ new Chart(ctx, {
     }
   }
 });
+const ctx2 = document.getElementById('dificultadChart');
+new Chart(ctx2, {
+  type: 'bar',
+  data: {
+    labels: ['1991 - Luis B. Chicaiza', '2004 - Julián García', '2008 - Yuri Niño'],
+    datasets: [{
+      label: 'Nivel de dificultad percibido (1=bajo, 5=alto)',
+      data: [5, 3, 4],
+      backgroundColor: ['#dc3545', '#ffc107', '#0d6efd']
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Dificultades iniciales enfrentadas por entrevistados'
+      }
+    },
+    scales: {
+      y: {
+        min: 1,
+        max: 5,
+        ticks: {
+          stepSize: 1,
+          callback: function(value) {
+            return ['Bajo', '', 'Medio', '', 'Alto'][value - 1];
+          }
+        }
+      }
+    }
+  }
+});
+
 
 // Activar los popovers de Bootstrap
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
