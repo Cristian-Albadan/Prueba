@@ -160,6 +160,71 @@ new Chart(ctx2, {
     }
   }
 });
+const motivacionesCtx = document.getElementById('motivacionesChart');
+new Chart(motivacionesCtx, {
+  type: 'radar',
+  data: {
+    labels: [
+      'Olimpiadas/Concursos',
+      'Programación temprana',
+      'Inspiración docente',
+      'Aprendizaje autónomo',
+      'Cambio desde otra carrera',
+      'Influencia familiar'
+    ],
+    datasets: [{
+      label: 'Frecuencia mencionada (entrevistas)',
+      data: [2, 2, 2, 1, 2, 1],
+      backgroundColor: 'rgba(13, 110, 253, 0.2)',
+      borderColor: 'rgba(13, 110, 253, 1)',
+      pointBackgroundColor: 'rgba(13, 110, 253, 1)',
+      borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      r: {
+        angleLines: { color: 'rgba(0,0,0,0.1)' },
+        suggestedMin: 0,
+        suggestedMax: 3,
+        ticks: {
+          stepSize: 1
+        },
+        title: {
+        display: true,
+        text: 'Motivaciones para estudiar Ingeniería de Sistemas'
+      }
+        
+      }
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: 'Factores vocacionales según entrevistas',
+        font: {
+          size: 16,
+          weight: 'bold'
+        }
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            const frases = {
+              0: '“Participé en Olimpiadas desde el colegio, eso me marcó” – Alfredo',
+              1: '“Formateaba mi PC todos los días, eso me encantaba” – Juan Camilo',
+              2: '“Ser auxiliar me hizo amar enseñar” – Alfredo',
+              3: '“Aprendí por cursos en línea y YouTube” – Juan Camilo',
+              4: '“Venía de Electrónica, pero Sistemas me atrapó” – Ambos',
+              5: '“Mi familia pensaba que sistemas era arreglar correos” – Juan Camilo'
+            };
+            return frases[context.dataIndex];
+          }
+        }
+      }
+    }
+  }
+});
 
 
 // Activar los popovers de Bootstrap
